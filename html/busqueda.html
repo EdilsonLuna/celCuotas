@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="../js/index.js"></script>
-    <title>CelCuotas</title>
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/result.js"></script>
+
+    <title>Catalogo de productos</title>
+  </head>
+  <body>
+    <!-- encabezado, menu de navegación -->
     <header class="mainheader">
         <div class="headerdiv">
             <a href="index.html"><img src="../img/celCuotasLogo.png" alt="" class="img-logo"></a>
@@ -28,8 +46,8 @@
             </div>
             <div class="options search-bar">
                 <div class="input-group mb-3 inputContainer">
-                    <input id="inputText" name="campoInput" type="text" class="form-control" placeholder="Busca en nuestro catálogo" aria-label="Busca en nuestro catálogo" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="filterCelphones()"><span class="material-symbols-outlined">search</span></button>
+                    <input type="text" class="form-control" placeholder="Busca en nuestro catálogo" aria-label="Busca en nuestro catálogo" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="alert('mensaje de pruebas')"><span class="material-symbols-outlined">search</span></button>
                 </div>
             </div>
             <div class="icon-container">
@@ -45,85 +63,33 @@
         </svg>
     </a>
 
-    <section class="main-content">
-        <div class="offerContainer" onclick="alert('hola')">
-            <div class="infoContainers">
-                <h6>LLEVA TU NUEVO TELÉFONO CON</h6>
-                <h3>30% DE DESCUENTO!!</h3>
-            </div>
-            <div class="infoContainers  offerImage">
-                <img src="../img/s24Ultra.webp" alt="samsung s24 ultra" class="phoneImg">
-                <div>
-                    <h3 style="font-weight: 600;">SAMSUNG S24 ULTRA</h3>
-                    <p>Antes: <span style="text-decoration: line-through;">6'000'000</span> COP</p>
-                    <h5>AHORA: 5'400'000 COP</h5>
-                </div>
-            </div>
-            <div class="buyBtn">
-                <h5>¡COMPRAR AHORA!</h5>
-            </div>
-        </div>
-
-        <div class="knowMore">
-            <h5 style="font-weight: bold;">¡ESTRENA YA Y PAGA EN CUOTAS SIN INTERESES!</h5>
-            <div class="targetContainer">
-                <div class="target">
-                    <span class="material-symbols-outlined">id_card</span>
-                    <p>Sólo con tu cédula</p>
-                </div>
-                <div class="target">
-                    <span class="material-symbols-outlined">attach_money</span>
-                    <p>Y con la cuota inicial del teléfono</p>
-                </div>
-            </div>
-            <h5><a href="#">Quiero saber más</a></h5>   
-        </div>
-
-        <div class="plansContainer">
-            <h4 style="font-weight: bold;">¿Por qué elegir CELCUOTAS?</h4>
-            <div class="targetContainer">
-                <div class="target">
-                    <span class="material-symbols-outlined">attach_money</span>
-                    <p>Ofrecemos planes de financiamiento flexibles</p>
-                </div>
-                <div class="target">
-                    <span class="material-symbols-outlined">volunteer_activism</span>
-                    <p>Mejora ty historial con nosotros para obtener mejores préstamos</p>
-                </div>
-                <div class="target">
-                    <span class="material-symbols-outlined">schedule</span>
-                    <p>Proceso de financiación rápido</p>
-                </div>
-                <div class="target">
-                    <span class="material-symbols-outlined">smartphone</span>
-                    <p>Obtén tu teléfono en minutos</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="newcel">
-            <div class="newcel-container">
-                <h1>Nuevo lanzamiento</h1>
-                <a href="../html/catalogo.html">Ver todos -></a>
-            </div>
-            
-            <div class="card" style="width: 300px;">
-                <img src="../img/s24Ultra.webp" class="card-img-top" alt="telefono">
+    <section class="category">
+        <h2 id="resultText" onload="charge()"></h2>
+        <div class="main-contentCatagory">
+            <div class="card" style="width: 18rem;">
+                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono">
                 <div class="card-body">
                     <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text">¡Descubre el futuro con el Samsung Galaxy S24 Ultra! Realiza una prueba con nuestro modelo 3D.</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Ir al modelo 3D</a>
+                    <p class="card-text"> $9.99</p>
+                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
                 </div>
             </div>
-        </div>
 
-        <div class="location-map">
-            <h3>¿Dónde nos puedes encontrar?</h3>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15836.72478096356!2d-73.1238068!3d7.1049884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e683fc8a8b0973f%3A0x5f50c91e41f0ac6e!2sUnidades%20Tecnol%C3%B3gicas%20de%20Santander!5e0!3m2!1ses!2sco!4v1713112361204!5m2!1ses!2sco" width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="text-container">
-                    <p>Av. Los Estudiantes #9-82</p> 
-                    <p>Bucaramanga, Santander</p>
+            <div class="card" style="width: 18rem;">
+                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono">
+                <div class="card-body">
+                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
+                    <p class="card-text"> $9.99</p>
+                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono">
+                <div class="card-body">
+                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
+                    <p class="card-text"> $9.99</p>
+                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
                 </div>
             </div>
         </div>
@@ -146,5 +112,7 @@
             </div>
         </footer>
     </section>
-</body>
+
+
+  </body>
 </html>
