@@ -68,6 +68,7 @@
     position: absolute;
     margin-top: 90px;
     width: 100%;
+    gap: 20px;
 }
 
 .icons{
@@ -163,4 +164,66 @@
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
+}
+
+.newcel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.newcel-container{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.newcel-container>a{
+    margin-left: 120px;
+}
+
+.location-map{
+    width: 100%;
+    text-align: center;
+}
+
+.map-container{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.map-container>h3{
+    font-weight: 900;
+}
+
+.main-footer{
+    padding-top: 5px;
+    color: white;
+    width: 100%;
+    background-color: #1C1C42;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-div>a>svg{
+    margin: 10px 10px;
+}
+
+.footer-div>a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.copyright-div{
+    width: 100%;
+    align-self: flex-end;
 }
