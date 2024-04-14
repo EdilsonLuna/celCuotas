@@ -71,15 +71,21 @@
     gap: 20px;
 }
 
-.main-contentCatagory{  
-    z-index: 1;
-    display: flex;
-    padding: 20px;
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: row;
+.category{
     position: absolute;
-    margin-top: 90px;
+    z-index: 1;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main-contentCatagory{
+    margin-top: 60px;
+    gap: 30px;
+    padding: 30px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -158,7 +164,6 @@
     align-items: center;
     flex-direction: column;
     width: 280;
-    margin-left: 90px; 
 }
 
 .targetContainer{
