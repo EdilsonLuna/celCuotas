@@ -12,3 +12,12 @@ function filterCelphones(){
     localStorage.setItem("h1text",texto);
     window.location.href = "../html/busqueda.html";
 }
+
+function more(){
+    window.location.href = "../html/more.html";
+}
+
+function setColor(color) {
+    document.getElementById('color').value = color;
+  }
+

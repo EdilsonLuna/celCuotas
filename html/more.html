@@ -1,38 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />    
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="../js/index.js"></script>
-    <title>Catalogo de productos</title>
-  </head>
-  <body>
-    <!-- encabezado, menu de navegación -->
+    <title>CelCuotas</title>
+</head>
+<body>
     <header class="mainheader">
         <div class="headerdiv">
             <a href="index.html"><img src="../img/celCuotasLogo.png" alt="" class="img-logo"></a>
@@ -44,8 +28,8 @@
             </div>
             <div class="options search-bar">
                 <div class="input-group mb-3 inputContainer">
-                    <input type="text" class="form-control" placeholder="Busca en nuestro catálogo" aria-label="Busca en nuestro catálogo" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="alert('mensaje de pruebas')"><span class="material-symbols-outlined">search</span></button>
+                    <input id="inputText" name="campoInput" type="text" class="form-control" placeholder="Busca en nuestro catálogo" aria-label="Busca en nuestro catálogo" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="filterCelphones()"><span class="material-symbols-outlined">search</span></button>
                 </div>
             </div>
             <div class="icon-container">
@@ -61,70 +45,78 @@
         </svg>
     </a>
 
-    <section class="category">
-        <div class="main-contentCatagory">
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
+    <section class="main-content">
+        
+        <div class="infoCel_contianer">
+            <div class="grid_child">
+                <div class="target_cel">
+                    <div class="card" style="width: 100%;">
+                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
+                    </div>
+                </div>
+                <div class="target_cel">
+                    <div class="card" style="width: 100%;">
+                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
+                    </div>
+                </div>
+                <div class="target_cel">
+                    <div class="card" style="width: 100%;">
+                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
+                    </div>
                 </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
+            <div class="grid_child">
+                <img src="../img/s24Ultra.webp" class="img_child" alt="telefono" draggable="false">
+            </div>
+            <div class="grid_child grid_components">
+                <h4 style="color: blueviolet; font-weight: bolder;">SAMSUNG S24 ULTRA</h4>
+                <div class="colorSelect">
+                    <p style="color: blueviolet;">Selecciona el color: </p>
+                    <button type="button" class="color-button negro" onclick="setColor('negro')">Negro</button>
+                    <button type="button" class="color-button dorado" onclick="setColor('dorado')">Dorado</button>
+                </div>
+                <div class="colorSelect">
+                    <p style="color: blueviolet;">Selecciona la memoria interna: </p>
+                    <button type="button" class="space-button" onclick="seleccionar()">512 GB</button>
+                    <button type="button" class="space-button">1 TB</button>
+                </div>
+                <button class="btn_comprar_ahora" onclick="comprar()">¡COMPRAR AHORA!</button>  
+                <div class="opciones_compra">
+                    <p style="color: blueviolet;">Opciones de compra: </p>
+                    <div class="btn_comprar_container">
+                        <button type="button" class="space-button">6</button>
+                        <button type="button" class="space-button">12</button>
+                        <button type="button" class="space-button">24</button>
+                        <p>Meses sin intereses</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary" onclick="more()">Comprar Ahora</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
-                </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" onclick="more()">
-                <div class="card-body">
-                    <h5 class="card-title">SAMSUNG S24 ULTRA</h5>
-                    <p class="card-text"> $9.99</p>
-                    <a onclick="alert('juas juas juas');" class="btn btn-primary">Comprar Ahora</a>
-                </div>
-            </div>
+        </div> 
+        
+        <div class="specifics_container">
+            <h5 style="color: blueviolet; font-weight: bolder;">Especificaciones adicionales</h5>
+            <table class="specifics_table">
+                <tr>
+                    <td>Procesador</td>
+                    <td>3.39GHz, 3.1 GHz, 2.9GHz, 2.2GHz // Octa-Core</td>
+                </tr>
+                <tr>
+                    <td>Pantalla</td>
+                    <td>3120 x 1440 (Quad HD+) AMOLED 2X</td>
+                </tr>
+                <tr>
+                    <td>Procesador</td>
+                    <td>200.0 MP + 50.0 MP + 12.0 MP + 10.0 MP</td>
+                </tr>
+                <tr>
+                    <td>Cámara</td>
+                    <td>3.39GHz, 3.1 GHz, 2.9GHz, 2.2GHz // Octa-Core</td>
+                </tr>
+                <tr>
+                    <td>Batería</td>
+                    <td>5000 mAh</td>
+                </tr>
+              </table>
         </div>
 
         <footer class="main-footer">
@@ -145,7 +137,5 @@
             </div>
         </footer>
     </section>
-
-
-  </body>
+</body>
 </html>
