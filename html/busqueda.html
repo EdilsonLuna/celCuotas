@@ -29,6 +29,7 @@
       crossorigin="anonymous"
     ></script>
 
+    <script src="../js/index.js"></script>
     <script src="../js/result.js"></script>
 
     <title>Catalogo de productos</title>
@@ -46,8 +47,8 @@
             </div>
             <div class="options search-bar">
                 <div class="input-group mb-3 inputContainer">
-                    <input type="text" class="form-control" placeholder="Busca en nuestro catálogo" aria-label="Busca en nuestro catálogo" aria-describedby="button-addon2">
-                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="alert('mensaje de pruebas')"><span class="material-symbols-outlined">search</span></button>
+                    <input type="text" name="campoInput" class="form-control" placeholder="Busca en nuestro catálogo" aria-label="Busca en nuestro catálogo" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="filterCelphones()"><span class="material-symbols-outlined">search</span></button>
                 </div>
             </div>
             <div class="icon-container">
