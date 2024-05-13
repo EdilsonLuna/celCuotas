@@ -20,7 +20,7 @@
     <header class="mainheader">
         <div class="headerdiv">
             <a href="index.html"><img src="../img/celCuotasLogo.png" alt="" class="img-logo"></a>
-            <div class="options ophover" onclick="window.location.href = './catalogo.html'">
+            <div class="options ophover" onclick="window.location.href = 'catalogo.html'">
                 <p>Catálogo</p> 
             </div>
             <div class="options ophover" onclick="alert('mensaje de pruebas')">
@@ -47,77 +47,36 @@
 
     <section class="main-content">
         
-        <div class="infoCel_contianer">
-            <div class="grid_child">
-                <div class="target_cel">
-                    <div class="card" style="width: 100%;">
-                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
+        <div class="form_container">
+            <form action="" class="form_Compra">
+                <h4 style="color: blueviolet; font-weight: bolder;">Método de pago</h4>
+                <div class="pago_data_container">
+                    <div class="pago_form_container">
+                        <p>Número de tarjeta:</p>
+                        <input type="email" name="" id="" class="form-control">
+                        <p>Nombre y apellido del titular: </p>
+                        <input type="text" class="form-control">
+                        <p>Fecha de vencimiento: </p>
+                        <input type="text" class="form-control">
+                        <p>Código de seguridad: </p>
+                        <input type="text" class="form-control">
+                        <p>Número de identificación del titular:</p>
+                        <div style="display: flex; gap: 13px;">
+                            <select name="" id="">
+                                <option value="1">CC</option>
+                                <option value="2">TI</option>
+                            </select>
+                            <input type="text" name="" id="" class="form-control">
+                        </div>
+                    </div>
+                    <div class="data_form_cd">
+                        <img src="../img/tarjeta_credito.png" alt="" width="220" height="140">
                     </div>
                 </div>
-                <div class="target_cel">
-                    <div class="card" style="width: 100%;">
-                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
-                    </div>
-                </div>
-                <div class="target_cel">
-                    <div class="card" style="width: 100%;">
-                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
-                    </div>
-                </div>
-            </div>
-            <div class="grid_child">
-                <img src="../img/s24Ultra.webp" class="img_child" alt="telefono" draggable="false">
-            </div>
-            <div class="grid_child grid_components">
-                <h4 style="color: blueviolet; font-weight: bolder;">SAMSUNG S24 ULTRA</h4>
-                <div class="colorSelect">
-                    <p style="color: blueviolet;">Selecciona el color: </p>
-                    <button type="button" class="color-button negro" onclick="setColor('negro')">Negro</button>
-                    <button type="button" class="color-button dorado" onclick="setColor('dorado')">Dorado</button>
-                </div>
-                <div class="colorSelect">
-                    <p style="color: blueviolet;">Selecciona la memoria interna: </p>
-                    <button type="button" class="space-button" onclick="seleccionar()">512 GB</button>
-                    <button type="button" class="space-button">1 TB</button>
-                </div>
-                <button class="btn_comprar_ahora" onclick="window.location.href = 'formCompra.html'">¡COMPRAR AHORA!</button>  
-                <div class="opciones_compra">
-                    <p style="color: blueviolet;">Opciones de compra: </p>
-                    <div class="btn_comprar_container">
-                        <button type="button" class="space-button">6</button>
-                        <button type="button" class="space-button">12</button>
-                        <button type="button" class="space-button">24</button>
-                        <p>Meses sin intereses</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        
-        <div class="specifics_container">
-            <h5 style="color: blueviolet; font-weight: bolder;">Especificaciones adicionales</h5>
-            <table class="specifics_table">
-                <tr>
-                    <td>Procesador</td>
-                    <td>3.39GHz, 3.1 GHz, 2.9GHz, 2.2GHz // Octa-Core</td>
-                </tr>
-                <tr>
-                    <td>Pantalla</td>
-                    <td>3120 x 1440 (Quad HD+) AMOLED 2X</td>
-                </tr>
-                <tr>
-                    <td>Procesador</td>
-                    <td>200.0 MP + 50.0 MP + 12.0 MP + 10.0 MP</td>
-                </tr>
-                <tr>
-                    <td>Cámara</td>
-                    <td>3.39GHz, 3.1 GHz, 2.9GHz, 2.2GHz // Octa-Core</td>
-                </tr>
-                <tr>
-                    <td>Batería</td>
-                    <td>5000 mAh</td>
-                </tr>
-              </table>
+                
+            </form>
         </div>
+        <button class="btn_comprar_ahora" onclick="window.location.href = 'formSolicitudCredito.html'">CONTINUAR</button>
 
         <footer class="main-footer">
             <h4>Encuéntranos en nuestras redes sociales</h4>

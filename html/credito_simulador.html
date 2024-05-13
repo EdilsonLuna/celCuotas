@@ -20,7 +20,7 @@
     <header class="mainheader">
         <div class="headerdiv">
             <a href="index.html"><img src="../img/celCuotasLogo.png" alt="" class="img-logo"></a>
-            <div class="options ophover" onclick="window.location.href = './catalogo.html'">
+            <div class="options ophover" onclick="window.location.href = 'catalogo.html'">
                 <p>Catálogo</p> 
             </div>
             <div class="options ophover" onclick="alert('mensaje de pruebas')">
@@ -46,78 +46,43 @@
     </a>
 
     <section class="main-content">
-        
-        <div class="infoCel_contianer">
-            <div class="grid_child">
-                <div class="target_cel">
-                    <div class="card" style="width: 100%;">
-                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
+        <h1 style="font-weight: bolder; color: rgb(1, 1, 145);">SIMULACIÓN / CALCULADORA DE CRÉDITO</h1>
+        <div class="simulador_container">
+            <div class="first_simulador_container">
+                <div class="info_simulador">
+                    <h5>Monto del préstamo</h5>
+                    <div class="simulador_info">
+                        <h4>$5'440'000</h4>
                     </div>
                 </div>
-                <div class="target_cel">
-                    <div class="card" style="width: 100%;">
-                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
+                <div class="info_simulador">
+                    <h5>Valor de cuota</h5>
+                    <div class="simulador_info">
+                        <h4>$471'466</h4>
+                    </div>
+                </div>    
+                
+                <div class="info_simulador">
+                    <h5>Tasa de interés %</h5>
+                    <div class="simulador_info">
+                        <h4>4%</h4>
+                    </div>
+                </div>    
+                
+                <div class="info_simulador">
+                    <h5>Meses</h5>
+                    <div class="simulador_info">
+                        <h4>12</h4>
                     </div>
                 </div>
-                <div class="target_cel">
-                    <div class="card" style="width: 100%;">
-                        <img src="../img/s24Ultra.webp"class="card-img-top" alt="telefono" draggable="false">
-                    </div>
-                </div>
+
             </div>
-            <div class="grid_child">
-                <img src="../img/s24Ultra.webp" class="img_child" alt="telefono" draggable="false">
+            <div class="second_simulador_container">
+                <img src="../img/s24Ultra.webp" alt="" class="simulador_phone">
             </div>
-            <div class="grid_child grid_components">
-                <h4 style="color: blueviolet; font-weight: bolder;">SAMSUNG S24 ULTRA</h4>
-                <div class="colorSelect">
-                    <p style="color: blueviolet;">Selecciona el color: </p>
-                    <button type="button" class="color-button negro" onclick="setColor('negro')">Negro</button>
-                    <button type="button" class="color-button dorado" onclick="setColor('dorado')">Dorado</button>
-                </div>
-                <div class="colorSelect">
-                    <p style="color: blueviolet;">Selecciona la memoria interna: </p>
-                    <button type="button" class="space-button" onclick="seleccionar()">512 GB</button>
-                    <button type="button" class="space-button">1 TB</button>
-                </div>
-                <button class="btn_comprar_ahora" onclick="window.location.href = 'formCompra.html'">¡COMPRAR AHORA!</button>  
-                <div class="opciones_compra">
-                    <p style="color: blueviolet;">Opciones de compra: </p>
-                    <div class="btn_comprar_container">
-                        <button type="button" class="space-button">6</button>
-                        <button type="button" class="space-button">12</button>
-                        <button type="button" class="space-button">24</button>
-                        <p>Meses sin intereses</p>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        
-        <div class="specifics_container">
-            <h5 style="color: blueviolet; font-weight: bolder;">Especificaciones adicionales</h5>
-            <table class="specifics_table">
-                <tr>
-                    <td>Procesador</td>
-                    <td>3.39GHz, 3.1 GHz, 2.9GHz, 2.2GHz // Octa-Core</td>
-                </tr>
-                <tr>
-                    <td>Pantalla</td>
-                    <td>3120 x 1440 (Quad HD+) AMOLED 2X</td>
-                </tr>
-                <tr>
-                    <td>Procesador</td>
-                    <td>200.0 MP + 50.0 MP + 12.0 MP + 10.0 MP</td>
-                </tr>
-                <tr>
-                    <td>Cámara</td>
-                    <td>3.39GHz, 3.1 GHz, 2.9GHz, 2.2GHz // Octa-Core</td>
-                </tr>
-                <tr>
-                    <td>Batería</td>
-                    <td>5000 mAh</td>
-                </tr>
-              </table>
         </div>
+        <button class="btn_comprar_ahora" onclick="window.location.href = 'centrales_riesgo.html'">Consulta a las centrales de riesgo</button>
+            
 
         <footer class="main-footer">
             <h4>Encuéntranos en nuestras redes sociales</h4>
